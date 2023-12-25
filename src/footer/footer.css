@@ -1,0 +1,20 @@
+.footer{
+    position:sticky;
+    bottom:0;
+    margin-top:900px;
+    width:100%;
+    text-align: center;
+    padding:10px;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(9px);
+    color:rgb(255, 255, 255);
+    text-shadow:1px 1px 20px #000000;
+    border-radius:20px;
+}
+@media(max-width:780px){
+    .footer{
+    margin-top:0;
+    }
+}

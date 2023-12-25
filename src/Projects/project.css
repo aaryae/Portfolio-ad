@@ -1,0 +1,72 @@
+.mainproject{
+    display:flex;
+    float:right;
+    width:50%;
+    gap:70px;
+    padding:20px;
+    
+}
+.mainproject hr{
+    box-shadow: 0 0px 40px 1px #ffffff;
+}
+.projecthoni{
+    display:flex;
+    flex-direction: column;
+    max-width: 700px;
+    
+}
+.p-image{
+    display:flex;
+    gap:20px;
+
+}
+.p-image img{
+    padding:5px;
+    border:1px solid white;
+    cursor:pointer;
+}
+
+.p1{
+    display:flex;
+    flex-wrap:wrap;
+    padding:10px;
+    gap:20px;
+    font-family: 'Balthazar', serif;
+    letter-spacing:1px;
+}
+.p1 h1{
+    color:rgb(139, 119, 6);
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+.p1 h1:hover{
+    color:rgb(85, 14, 14);
+    transition: 0.2s ease-in-out;
+    
+}
+.p1 p{
+    text-align:justify;
+    max-width: 75%;
+    font-weight:100;
+    font-size:1.06em;
+}
+
+
+
+@media(max-width:780px){
+    .mainproject{
+        float:none;
+        justify-content: center;
+        width:100%;
+
+    }
+    .projecthoni{
+        width:500px;
+    }
+    .newhoni{
+        display:none;
+    }
+    
+  }
+  

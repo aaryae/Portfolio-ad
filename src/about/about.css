@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+
+*{
+  scroll-behavior: smooth;
+}
+.aboutstart{
+   padding-top:30px;
+   font-family: 'Balthazar', serif;
+   font-weight:lighter;
+   display:flex;
+   gap:50px;
+   justify-content: space-evenly;
+   text-align: center;
+   flex-wrap:wrap;
+   padding-bottom:100px;
+
+}
+
+.hr{
+  border:0;
+    border-top: 1px dotted #8c8b8b;
+}
+
+.aboutstart h1 {
+  padding:10px;
+  letter-spacing: 2px;  
+  line-height: 1.5em;
+  color:rgb(139, 119, 6);
+
+}
+
+.aboutstart p{
+    font-size:1.25em;
+    line-height:1.3em;
+    letter-spacing: 1.5px;
+    padding:10px;
+    text-align: justify;
+}
+
+
+hr{
+    margin:10px 0 40px 0 ;
+    border-top: blue;
+    
+}
+
+.contact-button{
+  color:white;
+  background:transparent;
+  border:1px solid white;
+  margin-left:100px;
+  margin:30px;
+  padding:10px 20px 10px 20px;
+  font-family: 'Balthazar', serif;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  border-radius: 19px;
+  cursor: pointer;
+  text-transform: capitalize;
+
+}
+
+/* #0f172a; */
+.contact-button:hover{
+  transition: 0.2s ease-in;
+  border:1px solid rgb(139, 119, 6);
+  letter-spacing: 1.7px;
+  font-weight: bold;
+  color:rgb(139, 119, 6);
+  
+}
+
+
+
+
+.imagehoni{
+  justify-content: center;
+  display:flex;
+  border:1px solid white;
+  width:fit-content;
+  margin:0 auto;
+  padding:10px;
+  
+}
+
+
+
+@media(max-width:780px){
+  .imagehoni{
+    border:none;
+  }
+  .imagehoni img{
+    width:50%;
+  }
+  .aboutstart p{
+    font-size:1em;
+  }
+}
