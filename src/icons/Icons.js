@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Icons.css"
+import ScrollReveal from 'scrollreveal';
 
 const Icons = () => {
+    
+    useEffect(() => {
+       
+        const icons=document.querySelector(".icons-main")  
+    const sr=ScrollReveal({
+       distance:'65px',
+       duration:2600,
+       delay:450,
+       reset:false
+    });
+    sr.reveal(icons,{delay:400, origin:'left'});
+      
+    }, []);
+
     return (
+
 
         <div className='icons-main'>
 

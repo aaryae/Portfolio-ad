@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./about.css"
 import aarya from "../Images/aarya.jpg"
 import { saveAs } from 'file-saver'
 import ScrollReveal from 'scrollreveal';
+
 
 
 const About = () => {
@@ -17,18 +18,20 @@ const About = () => {
         .catch((error)=>console.error('error fetching ',error));
 
     };
-    let image=document.querySelector('.imagehoni')
-let content=document.querySelector('.aboutstart')
+    useEffect(() => {
+        const image = document.querySelector('.imagehoni');
+        const content = document.querySelector('.aboutstart');
 
-const sr=ScrollReveal({
-    distance:'65px',
-    duration:2600,
-    delay:450,
-    reset:false
-});
+        const sr = ScrollReveal({
+            distance: '65px',
+            duration: 2600,
+            delay: 450,
+            reset: true
+        });
 
-sr.reveal(image,{delay:200, origin:'top'});
-sr.reveal(content,{delay:300, origin:'top'});
+        sr.reveal(image, { delay: 200, origin: 'top' });
+        sr.reveal(content, { delay: 300, origin: 'top' });
+    }, []);
 
     return (
         <>
