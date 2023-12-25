@@ -1,8 +1,35 @@
 import React from 'react'
 import "./about.css"
 import aarya from "../Images/aarya.jpg"
+import { saveAs } from 'file-saver'
+import ScrollReveal from 'scrollreveal';
+
 
 const About = () => {
+    const handleDownload =()=>{
+        const pdfpath = "src/about/resume.pdf"
+
+        fetch(pdfpath)
+        .then((response)=>response.blob())
+        .then((blob)=>{
+            saveAs(blob,'resume.pdf');
+        })
+        .catch((error)=>console.error('error fetching ',error));
+
+    };
+    let image=document.querySelector('.imagehoni')
+let content=document.querySelector('.aboutstart')
+
+const sr=ScrollReveal({
+    distance:'65px',
+    duration:2600,
+    delay:450,
+    reset:false
+});
+
+sr.reveal(image,{delay:200, origin:'top'});
+sr.reveal(content,{delay:300, origin:'top'});
+
     return (
         <>
             <hr  className='hr'/>
@@ -26,7 +53,7 @@ const About = () => {
                     at <a target="blank" href="https://mail.google.com/mail/u/0/#inbox">aaryaed@gmail.com</a> , 
                    and I'm always open to new challenges and opportunities.
             </p>
-            <button class="contact-button">Contact me </button>
+            <button  onClick={handleDownload} class="contact-button">Download CV </button>
         </div>
         </div>
         </>

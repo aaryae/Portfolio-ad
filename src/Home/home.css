@@ -45,7 +45,7 @@ span {
     width: 80px;
     background-color: gold;
     height: 5px;
-    animation: line1 0.4s ease-in-out infinite;
+    animation: line1 0.4s ease-in-out 1;
 }
 
 .bar ul li a.link2:hover::before {
@@ -55,7 +55,7 @@ span {
     width: 115px;
     background-color: gold;
     height: 5px;
-    animation: line2 0.4s ease-in-out infinite;
+    animation: line2 0.4s ease-in-out 1;
 }
 
 

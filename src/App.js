@@ -7,10 +7,12 @@ import Icons from './icons/Icons';
 
 
 function App() {
+  
+
   return (
     <>
       <div className="main">
-   
+  
         <Home />
         <About />
         <div id="pro"></div>
@@ -18,6 +20,7 @@ function App() {
         <h1 className='pro'>Projects</h1>
         <Project />
         <Footer />
+        
       </div>
     </>
   );
