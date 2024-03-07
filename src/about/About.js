@@ -1,23 +1,12 @@
 import React, { useEffect } from 'react'
 import "./about.css"
 import aarya from "../Images/aarya.jpg"
-import { saveAs } from 'file-saver'
 import ScrollReveal from 'scrollreveal';
+import pdf from "./resume.pdf"
 
 
 
 const About = () => {
-    const handleDownload =()=>{
-        const pdfpath = "src/about/resume.pdf"
-
-        fetch(pdfpath)
-        .then((response)=>response.blob())
-        .then((blob)=>{
-            saveAs(blob,'resume.pdf');
-        })
-        .catch((error)=>console.error('error fetching ',error));
-
-    };
     useEffect(() => {
         const image = document.querySelector('.imagehoni');
         const content = document.querySelector('.aboutstart');
@@ -56,8 +45,7 @@ const About = () => {
                     at <a target="blank" href="https://mail.google.com/mail/u/0/#inbox">aaryaed@gmail.com</a> , 
                    and I'm always open to new challenges and opportunities.
             </p>
-            <button  onClick={handleDownload} class="contact-button">Download CV </button>
-        </div>
+            <a href={pdf} download={pdf} class="contact-button">Download CV</a>        </div>
         </div>
         </>
     )

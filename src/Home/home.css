@@ -26,15 +26,20 @@ span {
 .bar{
     font-weight:bold;
     letter-spacing: 3px;
+    padding-right:20px;
     
     
 }
 .bar ul {
     display: flex;
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 1.2em;
    position:absolute;
+   backdrop-filter: blur(52px);
+   background-color: transparent;
+   justify-content: center;
+   align-items: center;
 }
 
 
@@ -87,6 +92,7 @@ span {
     width: 100%;
     color:black;
     height:40vh;
+    z-index:1;
     
   }
   

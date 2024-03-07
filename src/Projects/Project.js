@@ -34,7 +34,7 @@ const Project = () => {
         <div className="p1">
             <div className="p-image">
                 <img src={xchange} alt="ad" height="50"/>
-                <a  target="blank" href="/"><h1>BookXchange</h1></a>
+                <a  target="blank" href="https://github.com/TeamPWNED/bookxchange-frontend"><h1>BookXchange</h1></a>
             </div>
             <div className="p-content">
                 <p> - Second hand book sharing app created with React JS and Django. Uses credit points for transaction.</p>
@@ -43,10 +43,10 @@ const Project = () => {
         <div className="p1">
             <div className="p-image">
                 <img src={consultant} alt="ad" height="50" />
-                <a target="blank" href="/"><h1>Consultant website</h1></a>
+                <a target="blank" href="https://github.com/aaryae/Reactlicious-Recipe"><h1>Reactlious-Recipie</h1></a>
             </div> 
             <div className="p-content">
-                <p> - More of a template created with a basic html and css.
+                <p> - created a recipie website using React and tailwind using custom json to fetch data .
                     <br />
                     <br />
                     - Visit to my <a target="blank" href="https://github.com/aaryae" >Github</a> profile for more javascript vanilla projects.

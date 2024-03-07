@@ -57,8 +57,10 @@ hr{
   border-radius: 19px;
   cursor: pointer;
   text-transform: capitalize;
+  text-decoration: none;
 
 }
+
 
 /* #0f172a; */
 .contact-button:hover{
