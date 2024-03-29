@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   width:75%;
+  
 
  
 }
@@ -20,7 +21,7 @@
   
 }
 
-span {
+.gold {
   font-size: 2.2em;
   color: rgb(102, 91, 26);
   font-family: cinzel;

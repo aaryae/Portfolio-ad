@@ -1,0 +1,91 @@
+.rotate {
+    display: inline-block; /* Ensures elements rotate around their own center */
+    animation: rotateAnimation 5s linear infinite;
+    padding:10px;
+    border-bottom:2px solid rgb(248, 178, 245); /* Adjust duration and timing function as needed */
+    border-radius:50%;
+    border-top:2px solid rgb(255, 220, 23);
+    z-index:-1;
+  }
+.hello{
+  display:flex;
+  flex-direction: column;
+}
+  .yeuta{
+    position: fixed;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .duita{
+    position: fixed;
+    left: 89%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.tinta{
+  position: fixed;
+  left: 88%;
+    top: 50%;
+  transform: translateY(-50%);
+}
+.d{
+  position: fixed;
+  left: 87%;
+    top: 50%;
+  transform: translateY(-50%);
+}
+/* 
+.d{
+  position: fixed;
+  left: 28%;
+  top: 71%;
+  transform: translateY(-50%);
+}
+.e{
+  position: fixed;
+  left: 90%;
+  top: 10%;
+  transform: translateY(-50%);
+}
+.f{
+  position: fixed;
+  left: 10%;
+  top: 90%;
+  transform: translateY(-50%);
+}
+.g{
+  position: fixed;
+  left: 14%;
+  top: 97%;
+  transform: translateY(-50%);
+}
+.h{
+  position: fixed;
+  left: 36%;
+  top: 89%;
+  transform: translateY(-50%);
+}
+.i{
+  position: fixed;
+  left: 36%;
+  top: 99%;
+  transform: translateY(-50%);
+}
+.j{
+  position: fixed;
+  left: 50%;
+  top: 90%;
+  transform: translateY(-50%);
+} */
+
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg); /* Start with no rotation */
+    }
+    100% {
+      transform: rotate(360deg); /* Rotate a full circle */
+    }
+  }
+  

@@ -6,6 +6,7 @@ import About from './about/About';
 import Footer from './footer/Footer';
 import Icons from './icons/Icons';
 import Height100 from './Height100';
+import Rotatess from './spa/Rotatess';
 
 
 function App() {
@@ -14,9 +15,11 @@ function App() {
   return (
     <>
       <div className="main">
+      <Rotatess/>
         <Home />
         <Height100/>
         <Icons />
+        
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<About/>}/>

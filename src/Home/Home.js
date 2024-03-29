@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
    <div className="nyav">
-    <div className="hero"><span>A</span>ARYAE</div>
+    <div className="hero"><span className='gold'>A</span>ARYAE</div>
    <div className="bar">
     <ul className='displaylainone'>
       <li><a  className="link1"href="/">About</a></li>
