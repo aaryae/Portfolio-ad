@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react'
 import "./about.css"
-// import aarya from "../Images/aarya.jpg"
 import ScrollReveal from 'scrollreveal';
-import pdf from "./resume.pdf"
+import pdf from "./Resume.pdf"
 import Height100 from '../Height100';
 
 
-
 const About = () => {
+   
     useEffect(() => {
         const image = document.querySelector('.imagehoni');
         const content = document.querySelector('.aboutstart');
@@ -29,9 +28,8 @@ const About = () => {
         <div className="imagehoni">
             {/* <img  className="real" src={aarya} alt="pho"  width="600" /> */}
             <p>Hi, my name is </p>
+            <h1>Aaryae.</h1>
             
-            <h1>Aaryae.
-            </h1>
             <br />
             <h2>I am a CS Student.</h2>
             <p className='design'>Building bridges between ideas and innovation through code.</p>
@@ -50,26 +48,26 @@ const About = () => {
 </div>
             </div>
         </div>
-       
+        <Height100/>
+        <Height100/>
+        <Height100/>
+           
         <div className='aboutstart'>
-            <div className="kxa">
-            <h1>About me</h1>
+        <h1>About me</h1>
+        <div className="herostart">
             <p>
-               &nbsp; &nbsp; Hello, I'm Aaryae. My journey in the realm of technology is marked by a
-                 diverse set of skills and a continuous thirst for learning. My skills 
-                 encompass a wide range, including HTML, CSS, JavaScript, C++, React.js,
-                  Next.js, GitHub, and C#. I believe in the power of coding to bring ideas 
-                  to life and solve real-world problems. </p>
-                  <br />
-                  <p>
-                   My passion for technology is 
-                  reflected in my dedication to expanding my skill set and staying updated
-                   with the latest advancements. You can reach out to me at 
-                    at <a target="blank" href="https://mail.google.com/mail/u/0/#inbox">aaryaed@gmail.com</a> , 
-                   and I'm always open to new challenges and opportunities.
+               &nbsp; &nbsp;
+Hello, I'm Aaryae. In the world of technology, I've embarked on a journey fueled by curiosity and a relentless pursuit of knowledge. My skill set is diverse, ranging from foundational web technologies like HTML, CSS, and JavaScript to more advanced frameworks like React.js and Next.js. I'm also proficient in languages like C++ and C#, which allow me to delve into software development beyond the web. GitHub is my playground for collaboration and version control.
+<br />
+<br />
+&nbsp;&nbsp;I firmly believe that coding is not just about writing lines of code; it's about harnessing the power of technology to bring ideas to life and tackle real-world challenges. My passion for technology is evident in my commitment to continuous learning and staying abreast of the latest advancements in the field.
+<br />
+<br />
+&nbsp;&nbsp;If you're interested in connecting or have an exciting opportunity to discuss, feel free to reach out to me at <a target="blank" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqXPXTLgrzbCdhbwTCDSqbPpJcgcPFGtmsFQDljkNSCRGTnDfHphTZjXDDvVgrgJVKCzvB">aaryaed@gmail.com</a>. I thrive on new challenges and am always eager to explore fresh avenues in the ever-evolving landscape of technology.
+               
             </p>
             <a href={pdf} download={pdf} class="contact-button">Download CV</a>        </div>
-        </div>
+            </div>
         </>
     )
 }
