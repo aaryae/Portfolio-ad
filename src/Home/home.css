@@ -1,165 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
 
 .nyav {
-
-    display: flex;
-    justify-content: space-between;
-   width:75%;
-
+  display: flex;
+  justify-content: space-between;
+  width:75%;
+  position: sticky;
+  top:0;
+  z-index: 999;
 }
 
 .hero {
-    padding: 20px;
-    font-size: 1.8em;
-    text-shadow: 1px 1px 42px rgb(0, 0, 0);
-    border-radius: 50%;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    cursor: pointer;
-
+  padding: 20px;
+  font-size: 1.8em;
+  text-shadow: 0px 7px 37px rgba(100, 99, 90, 0.678);
+  border-radius: 50%;
+  border-bottom: 1px solid rgb(104, 90, 22);
+  cursor: pointer;
+  letter-spacing: 5px;
+  font-family: cinzel;
+  
 }
 
 span {
-    font-size: 2.2em;
+  font-size: 2.2em;
+  color: rgb(102, 91, 26);
+  font-family: cinzel;
 }
 
-.bar{
-    font-weight:bold;
-    letter-spacing: 3px;
-    padding-right:20px;
-    
-    
+.bar {
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding-right: 20px;
 }
 .bar ul {
-    display: flex;
-    gap: 30px;
-    margin-top: 80px;
-    font-size: 1.2em;
-   position:absolute;
-   backdrop-filter: blur(52px);
-   background-color: transparent;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  gap: 30px;
+  margin-top: 80px;
+  font-size: 1.2em;
+  position: absolute;
+  backdrop-filter: blur(52px);
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .bar ul li a.link1:hover::before {
-    content: '';
-    bottom: -13px;
-    position: absolute;
-    width: 80px;
-    background-color: gold;
-    height: 5px;
-    animation: line1 0.4s ease-in-out 1;
+  content: "";
+  bottom: -1px;
+  position: absolute;
+  width: 80px;
+  background-color: rgb(148, 130, 27);
+  height: 2px;
+  animation: line1 0.4s ease-in-out 1;
 }
 
 .bar ul li a.link2:hover::before {
-    content: '';
-    bottom: -13px;
-    position: absolute;
-    width: 115px;
-    background-color: gold;
-    height: 5px;
-    animation: line2 0.4s ease-in-out 1;
+  content: "";
+  bottom: -1px;
+  position: absolute;
+  width: 115px;
+  background-color: rgb(148, 130, 27);
+  height: 2px;
+  animation: line2 0.4s ease-in-out 1;
 }
 
-
-
 .bar ul li {
-    list-style: none;
-   
+  list-style: none;
 }
 
 .bar ul li a {
-    text-decoration: none;
-  color:white;
-    font-family: cinzel, serif;
-
+  text-decoration: none;
+  color: rgb(148, 130, 27);
+  font-family: cinzel, serif;
+  font-weight: bolder;
 }
-
-.icons  {
-    
-    display: none;
+.bar ul li a:hover {
+  color: rgb(104, 90, 22);
+}
+.icons {
+  display: none;
 }
 
 .menu {
-    list-style: none;
-    top:0;
-    left: 0;
-    background-color:rgb(29, 28, 25);
-    display: flex;
-    flex-direction: column;
+  list-style: none;
+  top: 0;
+  left: 0;
+  background-color: rgb(29, 28, 25);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+  height: 40vh;
+  z-index: 1;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 1.2em;
+}
+
+.box {
+  position: absolute;
+
+  float: right;
+}
+
+@media (max-width: 691px) {
+  .icons {
+    display: block;
+    margin: 50px 0 0 100px;
+  }
+  .displaylainone {
+    display: none !important;
+  }
+  .nyav {
     width: 100%;
-    color:black;
-    height:40vh;
-    z-index:1;
-    
-  }
-  
-  .menu li {
-    padding: 10px;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color:black;
-    font-family: 'Cinzel', serif;
-    font-size: 1.2em;
-    
   }
 
-.box{
-    position:absolute;
-
-    float:right;
+  .hero {
+    font-size: 1em;
+  }
 }
-
-
-@media(max-width:691px) {
-   .icons{
-    display:block;
-    margin:50px 0 0 100px;
-   }
-   .displaylainone{
-    display:none !important;
-   }
-   .nyav{
-    width:100%;
-   }
-   
-   .hero{
-    font-size:1em;
-   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes line1 {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 80px;
-    }
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80px;
+  }
 }
 
 @keyframes line2 {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 115px;
-    }
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 115px;
+  }
 }

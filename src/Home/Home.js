@@ -17,7 +17,7 @@ const Home = () => {
    <div className="bar">
     <ul className='displaylainone'>
       <li><a  className="link1"href="/">About</a></li>
-      <li><a className='link2' href="#pro">Projects</a></li>
+      <li><a className='link2' href="/projects">Projects</a></li>
     </ul>
    
     <i onClick={toggleMenu} className="fa-sharp fa-solid fa-bars-staggered icons " ></i>
